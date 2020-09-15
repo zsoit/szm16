@@ -1,0 +1,124 @@
+<h2>
+    Kontakt</h2>
+
+<div class="contact">
+    <p class="contact__name">SZM16 POMOC IT</p>
+    <a href="tel:+48510962288">
+        <p class="contact__phone">+48 510 962 288</p>
+    </a>
+
+
+
+    <a href="mailto:monasterski.it@gmail.com"></i>
+        <p class="contact__mail">monasterski.it@gmail.com</p>
+    </a>
+    <p>Wycena oraz dodatkowe informacje udzielane indywidualnie</p>
+</div>
+
+
+<img src="https://img.icons8.com/doodle/48/000000/phone--v1.png" />
+
+<img name="slide" width="400" height="200">
+<script src="app/slider.js"></script>
+
+
+<ul>
+    <li>Instalacje systemów operacyjnych oraz sterowników </li>
+    <li>Montaż podzespołów komputerowych </li>
+    <li>Serwisowanie, naprawa komputera</li>
+    <li>aktualizowanie Biosu</li>
+    <li>Konfiguracja sieci domowej</li>
+    <li>Serwisowanie smartfonów</li>
+    <li>Zarabianie gniazd internetowych </li>
+    <li>Zarabianie patch paneli oraz keystone </li>
+    <li>Wymiana przycisków i analogów w padach </li>
+    <li>Konfiguracja obrazu w TV do korzystania codziennego</li>
+    <li>Instalacja Monitoringu </li>
+</ul>
+
+<hr>
+
+<div class="wrapper__price">
+
+    <div class="list">
+
+        <ol>
+            <li><i class="fas fa-laptop-code">Instalacje systemów operacyjnych oraz sterowników </li>
+            <li>Montaż podzespołów komputerowych </li>
+            <li>Serwisowanie, naprawa komputera</li>
+            <li>aktualizowanie Biosu</li>
+            <li>Konfiguracja sieci domowej</li>
+            <li>Serwisowanie smartfonów</li>
+            <li>Zarabianie gniazd internetowych </li>
+            <li>Zarabianie patch paneli oraz keystone </li>
+            <li>Wymiana przycisków i analogów w padach </li>
+            <li>Konfiguracja obrazu w TV do korzystania codziennego</li>
+            <li>Instalacja Monitoringu</li>
+        </ol>
+    </div>
+
+</div>
+
+<div id="list__value"></div>
+
+</div>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+<body>
+
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="img/image1-min.jpg" style="width:100%">
+  <img class="mySlides" src="img/image2-min.jpg" style="width:100%">
+  <img class="mySlides" src="img/image3-min.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Dalej</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Wstecz</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+</body>
+</html>
